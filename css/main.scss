@@ -1,0 +1,134 @@
+---
+---
+
+@charset "utf-8";
+
+// Example Defaults
+// $base-font-family: Helvetica, Arial, sans-serif;
+// $base-font-size:   16px;
+// $small-font-size:  $base-font-size * 0.875;
+// $base-line-height: 1.5;
+
+// $spacing-unit:     30px;
+
+// $text-color:       #111;
+// $background-color: #fdfdfd;
+// $brand-color:      #2a7ae2;
+
+// $grey-color:       #828282;
+// $grey-color-light: lighten($grey-color, 40%);
+// $grey-color-dark:  darken($grey-color, 25%);
+
+// // Width of the content area
+// $content-width:    800px;
+
+// $on-palm:          600px;
+// $on-laptop:        800px;
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+
+// variables.less
+$theme-primary: #324738;
+$theme-dark: #222;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "mixins",
+        "base"
+;
+
+.blog {
+        font-family: 'Georgia', serif;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        line-height: 1.8;
+}
+
+.blog h1, .blog h2, .blog h3 {
+        font-weight: 800;
+}
+
+.blog h1 {
+        font-size: 2.2em;
+        margin-bottom: 0.5em;
+}
+
+.blog h2 {
+        font-size: 1.8em;
+        margin: 1em 0;
+}
+
+.blog p {
+        font-size: 1.4em;
+        margin: 1.5em 0;
+        color: #333;
+}
+
+.blog img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px 0;
+}
+
+.blog blockquote {
+        margin: 1.5em 0;
+        padding-left: 1em;
+        border-left: 4px solid #d1d1d1;
+        color: #777;
+        font-style: italic;
+}
+
+.blog a {
+        color: #000000;
+        text-decoration: underline;
+        transition: color 0.3s ease;
+}
+
+.blog a:hover {
+        color: #000000;
+}
+
+.blog ul, .blog ol {
+        margin: 1.5em 0;
+        padding-left: 1.5em; /* To maintain the default indentation of unordered lists */
+}
+
+.blog li {
+        font-size: 1.3em; /* Same as the paragraph text size */
+        line-height: 1.8; /* Same as the paragraph line height */
+        color: #333;      /* Same as the paragraph text color */
+        margin-bottom: 0.5em; /* Spacing between list items */
+}
+
+.blog img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto; /* Updated this line to center the image */
+}
+
+.round-image-container {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        overflow: hidden;
+}
+
+.round-image-container img {
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+        transform: translate(0, 10%);
+}

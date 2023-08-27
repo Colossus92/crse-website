@@ -1,0 +1,12 @@
+# Site settings
+title: CR Software Engineering
+email: info@crsoftware.engineering
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: ""
+url: "https://www.crsoftware.engineering/" # the base hostname & protocol for your site
+
+linkedin_username: calvin-richardson
+github_username: colossus92
+
+# Build settings
+markdown: kramdown

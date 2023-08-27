@@ -1,0 +1,23 @@
+<section id="blogposts" class="bg-primary">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Blog posts</h2>
+                <hr class="light">
+                <p>I regularly write blog posts about topics around software development, architecture and
+                    socialtechnical challenges.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="d-flex custom-justify-center">
+                <ul>
+                    {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url }}" style="color: #fff">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
